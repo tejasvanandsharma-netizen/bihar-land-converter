@@ -20,4 +20,12 @@
     <loc>https://bihar-land-converter.netlify.app/disclaimer.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://bihar-land-converter.netlify.app/blog1.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bihar-land-converter.netlify.app/blog2.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
