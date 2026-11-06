@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bihar Land Converter</title>
+    
+    <script>
+        if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+
+    <style>
+        :root { --primary: #2E7D32; --primary-dark: #1B5E20; --primary-light: #E8F5E9; --background: #F7F9F7; --surface: #FFFFFF; --text-primary: #1B2A1D; --text-secondary: #647067; --border: #E0E7E1; }
+        [data-theme="dark"] { --primary: #66BB6A; --primary-dark: #81C784; --primary-light: #1E3520; --background: #1A1A1A; --surface: #242424; --text-primary: #E0E0E0; --text-secondary: #A0A0A0; --border: #3A3A3A; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: var(--background); color: var(--text-primary); font-family: Arial, Helvetica, sans-serif; line-height: 1.7; transition: background-color 0.3s, color 0.3s; }
+        .container { width: 90%; max-width: 850px; margin: 40px auto; padding: 25px; }
+        .site-header { background: var(--surface); border-bottom: 1px solid var(--border); }
+        .header-inner { padding: 14px 0; width: 90%; max-width: 850px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .brand-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--primary-light); color: var(--primary); font-size: 22px; }
+        .brand-name { margin: 0; font-size: 17px; font-weight: 800; color: var(--primary-dark); }
+        .language-button { min-height: 44px; padding: 8px 15px; border: 1px solid var(--primary); border-radius: 10px; background: var(--surface); color: var(--primary); font-weight: 700; font-size: 14px; cursor: pointer; }
+        .main-nav { display: flex; gap: 5px; flex-wrap: wrap; }
+        .main-nav a { text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 8px; }
+        .main-nav a:hover { background: var(--primary-light); color: var(--primary-dark); }
+        h1, h2 { color: var(--text-primary); }
+        p { color: var(--text-secondary); }
+        a { color: var(--primary); }
+        .contact-box { border: 1px solid var(--border); padding: 20px; border-radius: 8px; background: var(--surface); margin-top: 20px; }
+        ul { color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">⌂</div>
+                <h2 class="brand-name" id="siteName">Bihar Land Converter</h2>
+            </a>
+            <div style="display: flex; gap: 10px;">
+                <button type="button" class="language-button" id="languageToggle">हिंदी</button>
+                <button type="button" class="language-button" id="themeToggle">🌙</button>
+            </div>
+        </div>
+        <div style="width: 90%; max-width: 850px; margin: 0 auto; padding-bottom: 10px;">
+            <nav class="main-nav">
+                <a href="index.html" id="navHome">Home</a>
+                <a href="about.html" id="navAbout">About</a>
+                <a href="privacy.html" id="navPrivacy">Privacy</a>
+                <a href="disclaimer.html" id="navDisclaimer">Disclaimer</a>
+                <a href="contact.html" id="navContact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- ENGLISH -->
+        <div id="content-en">
+            <h1>Contact Us</h1>
+            <p>Thank you for visiting Bihar Land Converter. We value your feedback and welcome suggestions that can help us improve our website and make land unit conversion easier for everyone.</p>
+            <h2>Get in Touch</h2>
+            <p>Whether you have a question about our calculator, want to suggest a correction to a district-wise conversion value, or have an idea for improving our website, we would be happy to hear from you.</p>
+            <div class="contact-box">
+                <p><strong>For feedback, corrections, or partnership inquiries, email us at:</strong></p>
+                <p><a href="mailto:biharlandconverter@gmail.com">biharlandconverter@gmail.com</a></p>
+            </div>
+            <h2>What Can You Contact Us About?</h2>
+            <ul>
+                <li>Feedback and suggestions about the website.</li>
+                <li>Corrections to land measurement conversion values.</li>
+                <li>Requests for additional district-wise presets.</li>
+                <li>Technical issues or calculator-related problems.</li>
+                <li>Business and partnership opportunities.</li>
+            </ul>
+        </div>
+
+        <!-- HINDI -->
+        <div id="content-hi" style="display: none;">
+            <h1>संपर्क करें</h1>
+            <p>बिहार भूमि कनवर्टर पर आने के लिए धन्यवाद। हम आपके सुझावों का स्वागत करते हैं जो हमें अपनी वेबसाइट को बेहतर बनाने में मदद कर सकते हैं।</p>
+            <h2>संपर्क में रहें</h2>
+            <p>चाहे आपके पास हमारे कैलकुलेटर के बारे में कोई सवाल है, या आप किसी जिले के मान में सुधार सुझाना चाहते हैं, हम आपसे सुनकर खुश होंगे।</p>
+            <div class="contact-box">
+                <p><strong>प्रतिक्रिया, सुधार, या साझेदारी पूछताछ के लिए, हमें ईमेल करें:</strong></p>
+                <p><a href="mailto:biharlandconverter@gmail.com">biharlandconverter@gmail.com</a></p>
+            </div>
+            <h2>आप हमसे किस बारे में संपर्क कर सकते हैं?</h2>
+            <ul>
+                <li>वेबसाइट के बारे में प्रतिक्रिया और सुझाव।</li>
+                <li>भूमि माप रूपांतरण मूल्यों में सुधार।</li>
+                <li>अतिरिक्त जिला-वार प्रीसेट के लिए अनुरोध।</li>
+                <li>तकनीकी समस्याएं या कैलकुलेटर से जुड़ी समस्याएं।</li>
+                <li>व्यापार और साझेदारी के अवसर।</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        const themeToggle = document.getElementById("themeToggle"); const rootElement = document.documentElement;
+        if (rootElement.getAttribute("data-theme") === "dark") themeToggle.textContent = "☀️";
+        themeToggle.addEventListener("click", function() { const newTheme = rootElement.getAttribute("data-theme") === "dark" ? "light" : "dark"; rootElement.setAttribute("data-theme", newTheme); localStorage.setItem("theme", newTheme); themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙"; });
+        
+        const langBtn = document.getElementById("languageToggle"); const enDiv = document.getElementById("content-en"); const hiDiv = document.getElementById("content-hi");
+        const textSiteName = document.getElementById("siteName"); const textNavHome = document.getElementById("navHome"); const textNavAbout = document.getElementById("navAbout"); const textNavPrivacy = document.getElementById("navPrivacy"); const textNavDisclaimer = document.getElementById("navDisclaimer"); const textNavContact = document.getElementById("navContact");
+        let currentLang = localStorage.getItem("siteLang") || "en";
+        
+        function updateLangUI() {
+            if (currentLang === "en") { enDiv.style.display = "block"; hiDiv.style.display = "none"; langBtn.textContent = "हिंदी"; textSiteName.textContent = "Bihar Land Converter"; textNavHome.textContent = "Home"; textNavAbout.textContent = "About"; textNavPrivacy.textContent = "Privacy"; textNavDisclaimer.textContent = "Disclaimer"; textNavContact.textContent = "Contact"; } 
+            else { enDiv.style.display = "none"; hiDiv.style.display = "block"; langBtn.textContent = "English"; textSiteName.textContent = "बिहार भूमि कनवर्टर"; textNavHome.textContent = "होम"; textNavAbout.textContent = "हमारे बारे में"; textNavPrivacy.textContent = "प्राइवेसी"; textNavDisclaimer.textContent = "डिस्क्लेमर"; textNavContact.textContent = "संपर्क"; }
+        }
+        updateLangUI();
+        langBtn.addEventListener("click", function() { currentLang = currentLang === "en" ? "hi" : "en"; localStorage.setItem("siteLang", currentLang); updateLangUI(); });
+    </script>
+</body>
+</html>

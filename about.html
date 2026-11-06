@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bihar Land Converter</title>
+    
+    <!-- Dark Mode Script -->
+    <script>
+        if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+
+    <style>
+        /* CSS Variables for Light/Dark Mode */
+        :root {
+            --primary: #2E7D32;
+            --primary-dark: #1B5E20;
+            --primary-light: #E8F5E9;
+            --background: #F7F9F7;
+            --surface: #FFFFFF;
+            --text-primary: #1B2A1D;
+            --text-secondary: #647067;
+            --border: #E0E7E1;
+        }
+
+        [data-theme="dark"] {
+            --primary: #66BB6A;
+            --primary-dark: #81C784;
+            --primary-light: #1E3520;
+            --background: #1A1A1A;
+            --surface: #242424;
+            --text-primary: #E0E0E0;
+            --text-secondary: #A0A0A0;
+            --border: #3A3A3A;
+        }
+
+        /* Base Styles */
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; padding: 0;
+            background-color: var(--background);
+            color: var(--text-primary);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .container {
+            width: 90%; max-width: 850px;
+            margin: 40px auto; padding: 25px;
+        }
+
+        /* HEADER STYLES (Same as index.html) */
+        .site-header { background: var(--surface); border-bottom: 1px solid var(--border); }
+        .header-inner { padding: 14px 0; width: 90%; max-width: 850px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .brand-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--primary-light); color: var(--primary); font-size: 22px; }
+        .brand-name { margin: 0; font-size: 17px; font-weight: 800; color: var(--primary-dark); }
+        .language-button { min-height: 44px; padding: 8px 15px; border: 1px solid var(--primary); border-radius: 10px; background: var(--surface); color: var(--primary); font-weight: 700; font-size: 14px; cursor: pointer; }
+        .main-nav { display: flex; gap: 5px; flex-wrap: wrap; }
+        .main-nav a { text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 8px; }
+        .main-nav a:hover { background: var(--primary-light); color: var(--primary-dark); }
+        
+        /* Content Styles */
+        h1, h2 { color: var(--text-primary); }
+        p { color: var(--text-secondary); }
+        a { color: var(--primary); }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN HEADER (Synced with index.html) -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">⌂</div>
+                <h2 class="brand-name" id="siteName">Bihar Land Converter</h2>
+            </a>
+            <div style="display: flex; gap: 10px;">
+                <button type="button" class="language-button" id="languageToggle">हिंदी</button>
+                <button type="button" class="language-button" id="themeToggle">🌙</button>
+            </div>
+        </div>
+        <div style="width: 90%; max-width: 850px; margin: 0 auto; padding-bottom: 10px;">
+            <nav class="main-nav">
+                <a href="index.html" id="navHome">Home</a>
+                <a href="about.html" id="navAbout">About</a>
+                <a href="privacy.html" id="navPrivacy">Privacy</a>
+                <a href="disclaimer.html" id="navDisclaimer">Disclaimer</a>
+                <a href="contact.html" id="navContact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        
+        <!-- ENGLISH CONTENT -->
+        <div id="content-en">
+            <h1>About Bihar Land Converter</h1>
+            <p>Welcome to Bihar Land Converter, a simple and practical online tool created to make land measurement conversions easier for people across Bihar, India.</p>
+            <p>This website was developed by Tejasv Sharma, an independent solo developer from India with a simple goal: to help local landowners, property brokers, farmers, and surveyors quickly convert traditional land measurement units without complicated calculations or confusing formulas.</p>
+            
+            <h2>Why We Built This Tool</h2>
+            <p>Land measurements in Bihar commonly use units such as Kattha, Dhur, Bigha, and Decimal. Converting between these units can sometimes be confusing, especially when different measurement standards are followed in different areas. We created this tool to make these calculations quicker, simpler, and more accessible.</p>
+            
+            <h2>District-Wise Measurements</h2>
+            <p>We understand that land measurement standards are not always the same across Bihar. Values can vary by district, Mauza, and even village. To make conversions more useful, Bihar Land Converter provides district-wise Kattha presets along with an option to enter a custom measurement.</p>
+            
+            <h2>Our Commitment</h2>
+            <p>Our aim is to provide a free, easy-to-use, and transparent land conversion tool. We continuously aim to improve its accuracy, usability, and available features based on user needs.</p>
+            <p>Please remember that our calculations are for informational purposes only. Always verify local measurements with a qualified Amin or official land records before making property-related decisions.</p>
+            <p>Thank you for using Bihar Land Converter. We hope this tool makes land measurement a little easier for everyone.</p>
+        </div>
+
+        <!-- HINDI CONTENT -->
+        <div id="content-hi" style="display: none;">
+            <h1>बिहार भूमि कनवर्टर के बारे में</h1>
+            <p>बिहार भूमि कनवर्टर में आपका स्वागत है, एक सरल और व्यावहारिक ऑनलाइन टूल जिसे बिहार, भारत के लोगों के लिए भूमि माप को आसान बनाने के लिए बनाया गया है।</p>
+            <p>यह वेबसाइट तेजस्व शर्मा द्वारा बनाई गई है, जो भारत के एक स्वतंत्र डेवलपर हैं, जिनका एक सरल लक्ष्य है: स्थानीय भूमि मालिकों, संपत्ति दलालों, किसानों और सर्वेक्षकों को जटिल गणनाओं के बिना पारंपरिक भूमि माप इकाइयों को जल्दी से बदलने में मदद करना।</p>
+            
+            <h2>हमने यह टूल क्यों बनाया</h2>
+            <p>बिहार में भूमि माप आमतौर पर कट्ठा, धुर, बीघा और डेसिमल जैसी इकाइयों का उपयोग करती है। इन इकाइयों के बीच परिवर्तन कभी-कभी भ्रमित करने वाला हो सकता है, खासकर जब विभिन्न क्षेत्रों में अलग-अलग मापक मानकों का पालन किया जाता है। हमने इन गणनाओं को तेज़, सरल और अधिक सुलभ बनाने के लिए यह टूल बनाया है।</p>
+            
+            <h2>जिला-वार माप</h2>
+            <p>हम समझते हैं कि बिहार में भूमि माप मानक हमेशा एक समान नहीं होते हैं। मूल्य जिले, मौजा और यहां तक कि गांव के अनुसार भी भिन्न हो सकते हैं। रूपांतरणों को और अधिक उपयोगी बनाने के लिए, बिहार भूमि कनवर्टर जिला-वार कट्ठा प्रीसेट के साथ-साथ कस्टम माप दर्ज करने का विकल्प भी प्रदान करता है।</p>
+            
+            <h2>हमारी प्रतिबद्धता</h2>
+            <p>हमारा लक्ष्य एक मुफ्त, उपयोग में आसान और पारदर्शी भूमि रूपांतरण उपकरण प्रदान करना है। हम उपयोगकर्ताओं की जरूरतों के आधार पर इसकी सटीकता, उपयोगिता और उपलब्ध सुविधाओं को लगातार बेहतर बनाने का लक्ष्य रखते हैं।</p>
+            <p>कृपया ध्यान दें कि हमारी गणना केवल जानकारी के लिए है। संपत्ति से संबंधित निर्णय लेने से पहले हमेशा स्थानीय अमीन या आधिकारिक भूमि रिकॉर्ड से सत्यापित करें।</p>
+            <p>बिहार भूमि कनवर्टर का उपयोग करने के लिए धन्यवाद। हमें उम्मीद है कि यह टूल सभी के लिए भूमि माप को थोड़ा आसान बना देगा।</p>
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT FOR HEADER TOGGLES -->
+    <script>
+        // --- THEME TOGGLE LOGIC ---
+        const themeToggle = document.getElementById("themeToggle");
+        const rootElement = document.documentElement;
+        
+        // Set initial icon based on current theme
+        if (rootElement.getAttribute("data-theme") === "dark") {
+            themeToggle.textContent = "☀️";
+        }
+
+        themeToggle.addEventListener("click", function() {
+            const currentTheme = rootElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            rootElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
+        });
+
+        // --- LANGUAGE TOGGLE LOGIC ---
+        const langBtn = document.getElementById("languageToggle");
+        const enDiv = document.getElementById("content-en");
+        const hiDiv = document.getElementById("content-hi");
+        
+        // Global elements to translate
+        const textSiteName = document.getElementById("siteName");
+        const textNavHome = document.getElementById("navHome");
+        const textNavAbout = document.getElementById("navAbout");
+        const textNavPrivacy = document.getElementById("navPrivacy");
+        const textNavDisclaimer = document.getElementById("navDisclaimer");
+        const textNavContact = document.getElementById("navContact");
+
+        let currentLang = localStorage.getItem("siteLang") || "en";
+
+        function updateLangUI() {
+            if (currentLang === "en") {
+                enDiv.style.display = "block";
+                hiDiv.style.display = "none";
+                langBtn.textContent = "हिंदी";
+                
+                // Translate Header
+                textSiteName.textContent = "Bihar Land Converter";
+                textNavHome.textContent = "Home";
+                textNavAbout.textContent = "About";
+                textNavPrivacy.textContent = "Privacy";
+                textNavDisclaimer.textContent = "Disclaimer";
+                textNavContact.textContent = "Contact";
+            } else {
+                enDiv.style.display = "none";
+                hiDiv.style.display = "block";
+                langBtn.textContent = "English";
+                
+                // Translate Header
+                textSiteName.textContent = "बिहार भूमि कनवर्टर";
+                textNavHome.textContent = "होम";
+                textNavAbout.textContent = "हमारे बारे में";
+                textNavPrivacy.textContent = "प्राइवेसी";
+                textNavDisclaimer.textContent = "डिस्क्लेमर";
+                textNavContact.textContent = "संपर्क";
+            }
+        }
+
+        updateLangUI();
+
+        langBtn.addEventListener("click", function() {
+            currentLang = currentLang === "en" ? "hi" : "en";
+            localStorage.setItem("siteLang", currentLang);
+            updateLangUI();
+        });
+    </script>
+
+</body>
+</html>

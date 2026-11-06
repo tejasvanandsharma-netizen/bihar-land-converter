@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar Land Measurement Guide | Bihar Land Converter</title>
+    
+    <script>
+        if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
+
+    <style>
+        :root { --primary: #2E7D32; --primary-dark: #1B5E20; --primary-light: #E8F5E9; --background: #F7F9F7; --surface: #FFFFFF; --text-primary: #1B2A1D; --text-secondary: #647067; --border: #E0E7E1; }
+        [data-theme="dark"] { --primary: #66BB6A; --primary-dark: #81C784; --primary-light: #1E3520; --background: #1A1A1A; --surface: #242424; --text-primary: #E0E0E0; --text-secondary: #A0A0A0; --border: #3A3A3A; }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 0; background-color: var(--background); color: var(--text-primary); font-family: Arial, Helvetica, sans-serif; line-height: 1.7; transition: background-color 0.3s, color 0.3s; }
+        .container { width: 90%; max-width: 850px; margin: 40px auto; padding: 25px; }
+        
+        /* HEADER STYLES */
+        .site-header { background: var(--surface); border-bottom: 1px solid var(--border); }
+        .header-inner { padding: 14px 0; width: 90%; max-width: 850px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; }
+        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .brand-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--primary-light); color: var(--primary); font-size: 22px; }
+        .brand-name { margin: 0; font-size: 17px; font-weight: 800; color: var(--primary-dark); }
+        .language-button { min-height: 44px; padding: 8px 15px; border: 1px solid var(--primary); border-radius: 10px; background: var(--surface); color: var(--primary); font-weight: 700; font-size: 14px; cursor: pointer; }
+        .main-nav { display: flex; gap: 5px; flex-wrap: wrap; }
+        .main-nav a { text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 8px; }
+        .main-nav a:hover { background: var(--primary-light); color: var(--primary-dark); }
+
+        /* ARTICLE STYLES */
+        .article-card { background: var(--surface); padding: 30px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        h1 { color: var(--text-primary); font-size: 32px; margin-top: 0; }
+        h2 { color: var(--text-primary); font-size: 24px; margin-top: 30px; }
+        p { color: var(--text-secondary); font-size: 16px; }
+        ul { color: var(--text-secondary); }
+        
+        /* CTA BUTTON */
+        .cta-button { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; font-size: 16px; }
+        .cta-button:hover { background: var(--primary-dark); color: white; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">⌂</div>
+                <h2 class="brand-name">Bihar Land Converter</h2>
+            </a>
+            <div style="display: flex; gap: 10px;">
+                <button type="button" class="language-button" id="themeToggle">🌙</button>
+            </div>
+        </div>
+        <div style="width: 90%; max-width: 850px; margin: 0 auto; padding-bottom: 10px;">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article-card">
+            <!-- 👇 YAHAN SE APNA ARTICLE SHURU KARO 👇 -->
+             <h1>बिहार में कट्ठा, धुर, बीघा और डिसमिल में क्या अंतर है? (पूरी गाइड)</h1>
+
+<p>बिहार में जमीन खरीदना-बेचना हो, दाखिल-खारिज कराना हो या पुश्तैनी बँटवारा, हर जगह कट्ठा, धुर, बीघा और डिसमिल जैसे शब्द सुनने को मिलते हैं। सरकारी कागज़ात (जमाबंदी, खतियान, रजिस्ट्री) में अक्सर डिसमिल या एकड़ लिखा होता है, जबकि गाँव-मोहल्ले की बातचीत में कट्ठा और बीघा चलता है। इसी वजह से बहुत लोग उलझ जाते हैं। इस गाइड में हम हर इकाई को आसान भाषा में समझेंगे, उनके मानक मान जानेंगे और यह भी देखेंगे कि अलग-अलग मौजा में इनका मान क्यों बदल जाता है।</p>
+
+<h2>बिहार में जमीन नापने की प्रमुख इकाइयाँ</h2>
+
+<p>बिहार में ज़मीन की पैमाइश के लिए मुख्य रूप से चार इकाइयाँ प्रचलित हैं: बीघा, कट्ठा, धुर और डिसमिल। इनमें बीघा सबसे बड़ी और धुर सबसे छोटी इकाई है। डिसमिल एक अलग प्रणाली (एकड़) से आती है, जिसे सरकारी रिकॉर्ड में ज़्यादा इस्तेमाल किया जाता है।</p>
+
+<h2>1. बीघा (Bigha) क्या है?</h2>
+
+<p>बीघा ज़मीन की पारंपरिक और सबसे बड़ी स्थानीय इकाई है, जो खेती की ज़मीन के लिए ज़्यादा प्रयोग होती है। बिहार में आमतौर पर माना जाता है:</p>
+
+<ul>
+  <li>1 बीघा = 20 कट्ठा</li>
+  <li>1 बीघा = 400 धुर</li>
+  <li>1 बीघा ≈ 27,225 वर्ग फुट (लगभग 2,529 वर्ग मीटर)</li>
+  <li>1 बीघा ≈ 62.5 डिसमिल (लगभग 0.625 एकड़)</li>
+</ul>
+
+<h2>2. कट्ठा (Kattha) क्या है?</h2>
+
+<p>कट्ठा बिहार में प्लॉट, मकान की ज़मीन और छोटे खेतों को नापने की सबसे लोकप्रिय इकाई है। शहरों और कस्बों में प्लॉट की कीमत अक्सर "प्रति कट्ठा" बताई जाती है। मानक मान इस प्रकार हैं:</p>
+
+<ul>
+  <li>1 कट्ठा = 20 धुर</li>
+  <li>1 कट्ठा ≈ 1,361.25 वर्ग फुट (लगभग 126.5 वर्ग मीटर)</li>
+  <li>1 कट्ठा = 3.125 डिसमिल</li>
+  <li>20 कट्ठा = 1 बीघा</li>
+</ul>
+
+<h2>3. धुर (Dhur) क्या है?</h2>
+
+<p>धुर इन इकाइयों में सबसे छोटी है। जब ज़मीन कट्ठे के हिसाब से पूरी न बैठे, तो बचा हुआ हिस्सा धुर में बताया जाता है। जैसे "5 कट्ठा 10 धुर।" मानक मान:</p>
+
+<ul>
+  <li>1 धुर = 1/20 कट्ठा</li>
+  <li>1 धुर ≈ 68.06 वर्ग फुट (लगभग 6.32 वर्ग मीटर)</li>
+  <li>1 धुर ≈ 0.15625 डिसमिल</li>
+  <li>400 धुर = 1 बीघा</li>
+</ul>
+
+<h2>4. डिसमिल (Decimal) क्या है?</h2>
+
+<p>डिसमिल अंग्रेज़ी शासन के समय से चली आ रही एकड़ आधारित इकाई है। एक एकड़ का सौवाँ हिस्सा एक डिसमिल कहलाता है। यह इकाई पूरे देश में एक समान है, इसलिए ज़्यादातर सरकारी रिकॉर्ड, जैसे जमाबंदी, खतियान और रजिस्ट्री में, इसी का इस्तेमाल होता है।</p>
+
+<ul>
+  <li>1 डिसमिल = 435.6 वर्ग फुट (लगभग 40.47 वर्ग मीटर)</li>
+  <li>100 डिसमिल = 1 एकड़ = 43,560 वर्ग फुट</li>
+  <li>1 डिसमिल = 0.32 कट्ठा (लगभग)</li>
+</ul>
+
+<h2>एक नज़र में: मानक रूपांतरण सूची</h2>
+
+<ul>
+  <li>1 बीघा = 20 कट्ठा = 400 धुर = 62.5 डिसमिल</li>
+  <li>1 कट्ठा = 20 धुर = 3.125 डिसमिल = 1,361.25 वर्ग फुट</li>
+  <li>1 धुर = 0.15625 डिसमिल = 68.06 वर्ग फुट</li>
+  <li>1 डिसमिल = 435.6 वर्ग फुट</li>
+  <li>1 एकड़ = 100 डिसमिल = 1.6 बीघा (लगभग)</li>
+</ul>
+
+<p>उदाहरण: मान लीजिए आपके पास 5 कट्ठा 10 धुर ज़मीन है। इसे वर्ग फुट में बदलने पर (5 × 1,361.25) + (10 × 68.06) ≈ 7,487 वर्ग फुट होता है, जो लगभग 17.19 डिसमिल के बराबर है। रजिस्ट्री के कागज़ में यही ज़मीन डिसमिल में लिखी मिल सकती है।</p>
+
+<h2>मौजा या गाँव बदलने पर मान क्यों बदल जाता है?</h2>
+
+<p>ऊपर दिए गए मान सबसे ज़्यादा प्रचलित मानक हैं, लेकिन बिहार के कुछ जिलों, अंचलों और मौजा में कट्ठा और बीघा का असली क्षेत्रफल अलग हो सकता है। इसके पीछे कई ऐतिहासिक कारण हैं:</p>
+
+<ul>
+  <li><strong>पुरानी नाप-जोख की पद्धति:</strong> पहले ज़मीन रस्सी, ज़रीब या लग्गी से नापी जाती थी, और इनकी लंबाई हर इलाके में अलग होती थी।</li>
+  <li><strong>ज़मींदारी और सर्वे का दौर:</strong> अलग-अलग रियासतों और ज़मींदारों ने अपने-अपने पैमाने बनाए, जो आगे भी चलते रहे।</li>
+  <li><strong>क्षेत्रीय परंपरा:</strong> मगध, मिथिला, भोजपुर और सीमांचल जैसे क्षेत्रों में स्थानीय रिवाज़ के अनुसार इकाइयों का मान थोड़ा भिन्न रहा है।</li>
+  <li><strong>कच्चा और पक्का बीघा:</strong> कई जगह "कच्चा बीघा" और "पक्का बीघा" दोनों चलते हैं, जिनका आकार अलग होता है।</li>
+</ul>
+
+<p>इसलिए सौदा करने से पहले अपने मौजा में प्रचलित मान की पुष्टि ज़रूर करें। इसके लिए अंचल कार्यालय, सर्वे रिकॉर्ड या जमाबंदी के कागज़ात देखें और ज़रूरत हो तो स्थानीय अमीन या किसी जानकार से सलाह लें।</p>
+
+<h2>मैन्युअल गणना से बेहतर क्यों है कैलकुलेटर?</h2>
+
+<p>कट्ठा, धुर और डिसमिल के बीच हाथ से हिसाब लगाना देखने में आसान लगता है, पर इसमें गलती की गुंजाइश बहुत रहती है। ज़मीन के सौदे में छोटी-सी चूक भी लाखों रुपये का नुकसान कर सकती है। कैलकुलेटर के फायदे:</p>
+
+<ul>
+  <li><strong>सटीकता:</strong> दशमलव वाले मानों (जैसे 1,361.25 या 68.0625) में हाथ से गुणा-भाग करने पर गलती आम है, जबकि कैलकुलेटर सही नतीजा देता है।</li>
+  <li><strong>समय की बचत:</strong> बीघा से कट्ठा, धुर, डिसमिल और वर्ग फुट तक का रूपांतरण कुछ सेकंड में हो जाता है।</li>
+  <li><strong>कई इकाइयाँ एक साथ:</strong> एक ही आँकड़ा डालकर सभी इकाइयों में नतीजा देखा जा सकता है, जिससे कागज़ात का मिलान आसान होता है।</li>
+  <li><strong>विवाद से बचाव:</strong> सही गणना से खरीदार और विक्रेता के बीच क्षेत्रफल या कीमत को लेकर झगड़े की संभावना घटती है।</li>
+  <li><strong>कीमत का सही अंदाज़ा:</strong> प्रति कट्ठा या प्रति डिसमिल की दर से कुल कीमत निकालना आसान हो जाता है।</li>
+</ul>
+
+<h2>ज़मीन खरीदते समय ध्यान रखने योग्य बातें</h2>
+
+<ul>
+  <li>रजिस्ट्री और जमाबंदी में लिखी इकाई (आमतौर पर डिसमिल या एकड़) को ध्यान से पढ़ें।</li>
+  <li>बातचीत में बताई गई कट्ठा या बीघा की माप को कागज़ के क्षेत्रफल से मिलाएँ।</li>
+  <li>अपने मौजा में प्रचलित मान की पुष्टि अंचल कार्यालय से करें।</li>
+  <li>अंतिम सौदे से पहले ज़मीन की नाप किसी जानकार से करवा लें।</li>
+</ul>
+
+<h2>निष्कर्ष</h2>
+
+<p>संक्षेप में, 1 बीघा में 20 कट्ठा, 1 कट्ठा में 20 धुर और 1 डिसमिल लगभग 435.6 वर्ग फुट होता है। ये मानक मान आपको सही अंदाज़ा देते हैं, पर अपने इलाके की स्थानीय माप की पुष्टि करना हमेशा समझदारी है। रूपांतरण में गलती से बचने के लिए एक भरोसेमंद कैलकुलेटर का इस्तेमाल करें।</p>
+
+<h2>अभी अपनी ज़मीन का सही हिसाब लगाएँ</h2>
+
+<p>कट्ठा, धुर, बीघा और डिसमिल का रूपांतरण पल भर में करना चाहते हैं? हमारे <a href="https://bihar-land-converter.netlify.app/" target="_blank" rel="noopener"><strong>Bihar Land Converter</strong></a> का इस्तेमाल करें और बिना किसी झंझट के अपनी ज़मीन का सटीक क्षेत्रफल जानें। आज ही आज़माएँ: <a href="https://bihar-land-converter.netlify.app/" target="_blank" rel="noopener">https://bihar-land-converter.netlify.app/</a></p>
+            
+            <!-- 👆 YAHAN TAK ARTICLE HAI 👆 -->
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid var(--border);">
+            
+            <div style="text-align: center;">
+                <h3 style="color: var(--text-primary);">Zameen naapne mein dikkat aa rahi hai?</h3>
+                <p>Hamare free tool se turant sahi calculation karein.</p>
+                <a href="index.html" class="cta-button">Free Calculator Use Karein</a>
+            </div>
+
+        </article>
+    </main>
+
+    <script>
+        const themeToggle = document.getElementById("themeToggle"); const rootElement = document.documentElement;
+        if (rootElement.getAttribute("data-theme") === "dark") themeToggle.textContent = "☀️";
+        themeToggle.addEventListener("click", function() { const newTheme = rootElement.getAttribute("data-theme") === "dark" ? "light" : "dark"; rootElement.setAttribute("data-theme", newTheme); localStorage.setItem("theme", newTheme); themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙"; });
+    </script>
+</body>
+</html>
